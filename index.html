@@ -80,7 +80,7 @@
 }
 
 .container {
-    max-width: 720px;
+    max-width: 200px;
     margin: 15px auto;
     background-color: hsl(192, 41%, 71%);
     border-radius: 5px;
@@ -94,7 +94,7 @@
 }
 
 .header img {
-    width: 160px;
+    width: 1px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -110,7 +110,7 @@
 }
 
 .content h2 {
-    color: #444;
+    color: #ffffff;
     font-size: 22px;
     margin-bottom: 10px;
     border-bottom: 2px solid #ddd;
@@ -146,7 +146,7 @@
     <div class="content" id="Profil Lee Jeno">
         <h1 style="text-align: center; color: #368dc7;">Profil Lee Jeno</h1>
     <div class="container">
-        <img src="jeno.jpg" alt="Profil Lee Jeno" class="center-image">
+        <img src="jeno.jpg" alt="Profil Lee Jeno" class="center-image" style="width: 100%; height: auto;">
     </div>
 
         <p><strong>Nama Lengkap:</strong> Lee Jeno (이제노)<p>
@@ -204,75 +204,130 @@
             <center><p> instagram :<a href="https://www.instagram.com/leejen_o_423"target="_blank">leejeno</a></p>  </center>
             <center><a href="#top">Kembali ke atas!</a></center>
 
-            <!DOCTYPE html>
-            <html lang="id">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Formulir Kontak Berwarna</title>
-                <style>
-                    /* Gaya untuk form */
-                    .form-container {
-                        background-color: #f0f8ff; /* Warna latar belakang form */
-                        padding: 20px;
-                        max-width: 400px;
-                        margin: auto;
-                        border-radius: 10px;
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                    }
-            
-                    /* Gaya untuk label dan input */
-                    label {
-                        font-weight: bold;
-                        color: #333;
-                        display: block;
-                        margin-bottom: 5px;
-                    }
-            
-                    input[type="text"], input[type="email"], textarea {
-                        width: 100%;
-                        padding: 10px;
-                        margin-bottom: 15px;
-                        border: 1px solid #ccc;
-                        border-radius: 5px;
-                    }
-            
-                    /* Gaya untuk tombol kirim */
-                    input[type="submit"] {
-                        background-color: #4CAF50; /* Warna hijau untuk tombol */
-                        color: white;
-                        padding: 10px 15px;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                    }
-            
-                    input[type="submit"]:hover {
-                        background-color: #878594; /* Warna saat tombol di-hover */
-                    }
-                </style>
-            </head>
-            <body>
-                <h2 style="text-align: center; color: #333;">Formulir</h2>
-                <div class="form-container">
-                    <form action="#" method="post">
-                        <!-- Field Nama -->
-                        <label for="name">Nama:</label>
-                        <input type="text" id="name" name="name" required>
-                        
-                        <!-- Field Email -->
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        
-                        <!-- Field Pesan -->
-                        <label for="message">Pesan:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                        
-                        <!-- Tombol Kirim -->
-                        <input type="submit" value="Kirim">
+  
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Kontak Modern</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #ECF0F1;
+        }
 
-                    </form>
-                </div>
+        .container {
+            width: 50%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #34495E;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #1ABC9C;
+            margin-bottom: 30px;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ECF0F1;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 50%;
+            padding: 12px;
+            margin-bottom: 7px;
+            border: 2px solid #1ABC9C;
+            border-radius: 8px;
+            background-color: #ECF0F1;
+            color: #fdfdfd;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            border-color: #5c3733;
+            outline: none;
+            background-color: #6293b2;
+        }
+
+        textarea {
+            height: 44px;
+        }
+
+        button {
+            background-color: #a5bdbd;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 16px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #337266;
+        }
+
+        .instagram-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .instagram-logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .instagram-text {
+            font-size: 17px;
+            text-decoration: none;
+            color: #acc1cd;
+            font-weight: bold;
+        }
+
+        .instagram-text:hover {
+            color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulir Kontak</h2>
+
+        <form action="submit.html" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" placeholder="Tulis pesan Anda" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <div class="instagram-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="instagram-logo">
+            <a href="https://www.instagram.com/ajeeyaz?igsh=MTUya3N3aXhkdzV0dg==" target="_blank" class="instagram-text">@ajeeyaz</a>
+        </div>
+    </div>
+
             </body>
             </html>
 
